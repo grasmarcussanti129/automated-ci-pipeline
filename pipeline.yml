@@ -11,3 +11,4 @@ jobs:
   deploy:
     steps:
       - run: echo 'Deploying to production...'
+      - run: npm run deploy
