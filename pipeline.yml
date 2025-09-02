@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   build:
     docker:
-      - image: node:20.1
+      - image: node:20.2
     steps:
       - checkout
       - run: npm install
