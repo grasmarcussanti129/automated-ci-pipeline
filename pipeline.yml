@@ -1,0 +1,13 @@
+version: 1.0
+jobs:
+  build:
+    docker:
+      - image: node:14
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+
+  deploy:
+    steps:
+      - run: echo 'Deploying to production...'
